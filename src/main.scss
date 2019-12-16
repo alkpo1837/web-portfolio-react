@@ -1,0 +1,50 @@
+// @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+/** Color palette **/
+$black-color: #252222;
+$white-color: rgb(250, 250, 250);
+// $white-color-2: rgb(235, 235, 235);
+$white-color-2: hsl(212, 33%, 89%);
+
+$gray-color: #867e7e;
+$text-color: $black-color;
+
+$indigo-1: hsl(224, 67%, 76%);
+$indigo-2: hsl(228, 45%, 45%);
+
+$common-size: 880px;
+
+$break-size-desktop: 936px;
+$break-size-mobile: 475px;
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+
+  background-color: $white-color;
+  color: $text-color;
+
+  font-size: 18px;
+
+  a {
+    font-style: underline;
+    color: $black-color;
+  }
+
+  @media screen and (max-width: $break-size-mobile) {
+    font-size: 14px;
+
+    ul {
+      margin-left: 4px;
+      padding-left: 4px;
+    }
+  }
+}
