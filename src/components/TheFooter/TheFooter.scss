@@ -1,0 +1,67 @@
+@import "../../main";
+
+footer {
+  margin-top: 80px;
+  width: 100%;
+
+  background-color: $black-color;
+  color: $white-color;
+
+  .content_footer {
+    width: 880px;
+    margin: 8px auto;
+
+    display: flex;
+    justify-content: space-around;
+
+    @media screen and (max-width: $break-size-desktop) {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #sitemap {
+      display: flex;
+      align-items: center;
+
+      @media screen and (max-width: $break-size-desktop) {
+        margin-bottom: 16px;
+      }
+
+      a {
+        color: white;
+        margin-left: 16px;
+      }
+    }
+
+    #icons {
+      width: 256px;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+
+      @media screen and (max-width: $break-size-desktop) {
+        padding-bottom: 8px;
+      }
+
+      img {
+        width: 32px;
+        height: 32px;
+        color: $white-color;
+
+        @media screen and (max-width: $break-size-desktop) {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+
+    #website_created {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
