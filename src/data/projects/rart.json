@@ -1,7 +1,7 @@
 {
   "name": "RArt",
   "date": "Juin 2018 - Avril 2019",
-  "description": "./rart.md",
+  "descriptionMd": "rart.md",
   "languages": ["Unity", "Vuforia", "HTML", "CSS", "Javascript"],
   "links": [
     {
