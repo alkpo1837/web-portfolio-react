@@ -9,7 +9,7 @@ import mail from "../../img/footer/mail.svg";
 
 const TheFooter = () => (
   <footer>
-    <div class="content_footer">
+    <div className="content_footer">
       <div id="websited_created">
         <p>Créé par Arthur Capo</p>
       </div>

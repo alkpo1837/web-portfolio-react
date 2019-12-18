@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Project.scss";
+import styles from "./Project.module.scss";
 
 import ProjectType from "../../components/Project/ProjectType";
 
@@ -19,30 +19,30 @@ const Project = ({ data }) => {
   }, [descriptionMd]);
 
   return (
-    <div className="project">
-      <div class="first-line">
-        <h1 class="name">{name}</h1>
+    <div className={styles.project}>
+      <div className={styles.firstLine}>
+        <h1 className={styles.name}>{name}</h1>
         <ProjectType type={type} />
       </div>
-      <div class="date">
+      <div className={styles.date}>
         <img src="../../img/projects/calendar.svg" alt="Calendar" />
         <span>{date}</span>
       </div>
-      <div class="description">
+      <div className={styles.description}>
         <ReactMarkdown source={md} />
 
-        <div class="technology-line">
+        <div className={styles.technologies}>
           {languages &&
             languages.map((language, index) => {
               return (
-                <span key={index} class="technology">
+                <span key={index} className={styles.technology}>
                   {language}
                 </span>
               );
             })}
         </div>
       </div>
-      <div class="links">
+      <div className={styles.links}>
         {links &&
           links.map((link, index) => {
             const { name, url } = link;
@@ -53,7 +53,7 @@ const Project = ({ data }) => {
             );
           })}
       </div>
-      <div class="screenshots">
+      <div className={styles.screenshots}>
         {links &&
           images.map((image, index) => {
             return <img key={index} src={image} alt={"Screen" + index} />;

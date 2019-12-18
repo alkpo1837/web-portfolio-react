@@ -1,0 +1,13 @@
+@import "../main";
+
+main {
+  width: $common-size;
+  margin: 32px auto;
+
+  text-align: left;
+  line-height: 1.4;
+
+  @media screen and (max-width: $break-size-desktop) {
+    width: 90%;
+  }
+}

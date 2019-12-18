@@ -12,7 +12,7 @@ const ProjectType = ({ type }) => {
   );
   const icon = require(`../../img/projects/${projectType.icon}`);
   return (
-    <div class="type">
+    <div className="type">
       <img src={icon} alt="Project type" />
       <span>{projectType.text}</span>
     </div>

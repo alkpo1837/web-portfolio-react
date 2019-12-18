@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const TheHeader = () => (
   <header>
-    <div class="content_header">
+    <div className="content_header">
       <div id="my_name">
         <Link to="/">ARTHUR CAPO</Link>
       </div>
