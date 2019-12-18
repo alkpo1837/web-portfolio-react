@@ -1,6 +1,7 @@
 {
   "name": "Dorébus",
   "date": "Juin 2019 - En cours",
+  "type": "personnal",
   "descriptionMd": "dorebus.md",
   "languages": ["Python", "Flask", "ReactJS", "Android natif"],
   "links": [],

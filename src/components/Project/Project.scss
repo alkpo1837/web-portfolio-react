@@ -33,29 +33,7 @@
       font-size: 20px;
     }
 
-    .type {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
 
-      @media screen and (max-width: $break-size-desktop / 2) {
-        margin-top: 8px;
-      }
-
-      img {
-        width: 32px;
-        height: 32px;
-
-        @media screen and (max-width: $break-size-desktop / 2) {
-          width: 24px;
-          height: 24px;
-        }
-      }
-      span {
-        margin-left: 8px;
-      }
-      font-style: italic;
-    }
   }
 
   .date {

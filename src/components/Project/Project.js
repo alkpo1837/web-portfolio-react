@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./Project.scss";
 
+import ProjectType from "../../components/Project/ProjectType";
+
 const ReactMarkdown = require("react-markdown/with-html");
 
 const Project = ({ data }) => {
-  const { name, date, descriptionMd, languages, links, images } = data;
+  const { name, date, descriptionMd, type, languages, links, images } = data;
 
   const [md, setMd] = useState();
 
@@ -20,13 +22,10 @@ const Project = ({ data }) => {
     <div className="project">
       <div class="first-line">
         <h1 class="name">{name}</h1>
-        <div class="type">
-          <img src="img/projects/user.svg" alt="Project type" />
-          <span>Projet personnel</span>
-        </div>
+        <ProjectType type={type} />
       </div>
       <div class="date">
-        <img src="img/projects/calendar.svg" alt="Calendar" />
+        <img src="../../img/projects/calendar.svg" alt="Calendar" />
         <span>{date}</span>
       </div>
       <div class="description">
