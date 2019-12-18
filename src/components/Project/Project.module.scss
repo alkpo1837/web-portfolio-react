@@ -58,12 +58,6 @@
       flex-direction: row;
       margin-top: 24px;
       flex-wrap: wrap;
-
-      .technology {
-        margin: 4px;
-        padding: 8px;
-        border: 1px solid black;
-      }
     }
   }
 
@@ -71,22 +65,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
-    a {
-      padding: 8px 16px;
-      border-radius: 16px;
-      border: 2px dotted transparent;
-      margin-right: 24px;
-      background-color: $indigo-1;
-      text-decoration: none;
-      font-weight: bold;
-      color: $indigo-2;
-      margin-top: 8px;
-
-      &:hover {
-        border: 2px solid $indigo-2;
-      }
-    }
   }
 
   .screenshots {

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import styles from "./Project.module.scss";
 
 import ProjectType from "../../components/Project/ProjectType";
+import Technology from "../../components/Project/Technology";
+import LinkProject from "../../components/Project/LinkProject";
 
 const ReactMarkdown = require("react-markdown/with-html");
 
@@ -34,11 +36,7 @@ const Project = ({ data }) => {
         <div className={styles.technologies}>
           {languages &&
             languages.map((language, index) => {
-              return (
-                <span key={index} className={styles.technology}>
-                  {language}
-                </span>
-              );
+              return <Technology key={index}>{language}</Technology>;
             })}
         </div>
       </div>
@@ -47,9 +45,9 @@ const Project = ({ data }) => {
           links.map((link, index) => {
             const { name, url } = link;
             return (
-              <a key={index} href={url}>
+              <LinkProject key={index} href={url}>
                 {name}
-              </a>
+              </LinkProject>
             );
           })}
       </div>
