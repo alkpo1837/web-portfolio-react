@@ -1,7 +1,11 @@
 import React from "react";
 import "./TheFooter.scss";
 
+import { Link } from "react-router-dom";
+
 import github from "../../img/footer/github.svg";
+import linkedin from "../../img/footer/linkedin.svg";
+import mail from "../../img/footer/mail.svg";
 
 const TheFooter = () => (
   <footer>
@@ -10,19 +14,19 @@ const TheFooter = () => (
         <p>Créé par Arthur Capo</p>
       </div>
       <div id="sitemap">
-        <a href="./index.html">Accueil</a>
-        <a href="./about_me.html">À propos de moi</a>
-        <a href="./projects.html">Projets</a>
+        <Link to="/">Accueil</Link>
+        <Link to="about">À propos de moi</Link>
+        <Link to="projects">Projets</Link>
       </div>
       <div id="icons">
         <a href="https://github.com/alkpo1837">
           <img src={github} alt="Github logo" />
         </a>
         <a href="https://www.linkedin.com/in/arthur-capo-1472a6108/">
-          <img src="./img/icon/linkedin.svg" alt="LinkedIn logo" />
+          <img src={linkedin} alt="LinkedIn logo" />
         </a>
         <a href="mailto:capo.arthur@gmail.com">
-          <img src="./img/icon/mail.svg" alt="Mail logo" />
+          <img src={mail} alt="Mail logo" />
         </a>
       </div>
     </div>

@@ -1,16 +1,18 @@
 import React from "react";
 import "./TheHeader.scss";
 
+import { Link } from "react-router-dom";
+
 const TheHeader = () => (
   <header>
     <div class="content_header">
       <div id="my_name">
-        <a href="./index.html">ARTHUR CAPO</a>
+        <Link to="/">ARTHUR CAPO</Link>
       </div>
 
       <div id="menu">
-        <a href="about_me.html">À PROPOS</a>
-        <a href="projects.html">PROJETS</a>
+        <Link to="about">À PROPOS</Link>
+        <Link to="projects">PROJETS</Link>
       </div>
     </div>
   </header>
