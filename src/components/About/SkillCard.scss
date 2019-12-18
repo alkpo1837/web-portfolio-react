@@ -1,0 +1,70 @@
+@import "../../main";
+
+.skill_card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+
+  .all_lines {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+
+    .skill {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 8px;
+      height: 48px;
+      max-width: 256px;
+      margin-left: 32px;
+
+      @media screen and (max-width: $break-size-mobile) {
+        width: 220px;
+      }
+
+      img {
+        width: 28px;
+      }
+      span {
+        margin-left: 16px;
+      }
+    }
+  }
+}
+
+.header_box_top_left_full_height {
+  position: relative;
+  &:before {
+    content: "";
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 64px;
+    height: 1px;
+  }
+
+  &:after {
+    content: "";
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 1px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid black;
+}
+
+.border-left {
+  border-left: 1px solid black;
+}
+
+.border-bottom {
+  border-bottom: 1px solid black;
+}

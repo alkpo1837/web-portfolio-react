@@ -56,7 +56,7 @@ const Project = ({ data }) => {
       <div class="screenshots">
         {links &&
           images.map((image, index) => {
-            return <img key={index} src={image} alt={"Screen" + index}></img>;
+            return <img key={index} src={image} alt={"Screen" + index} />;
           })}
       </div>
     </div>

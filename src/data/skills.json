@@ -1,0 +1,72 @@
+[
+  {
+    "category": "Développement multiplateformes",
+    "skills": [
+      {
+        "iconFilename": "unity.svg",
+        "name": "Unity"
+      },
+      {
+        "iconFilename": "c_sharp.png",
+        "name": "C#"
+      },
+      {
+        "iconFilename": "android.svg",
+        "name": "Android natif"
+      },
+      {
+        "iconFilename": "java.png",
+        "name": "Java"
+      },
+      {
+        "iconFilename": "kotlin.png",
+        "name": "Kotlin"
+      },
+      {
+        "iconFilename": "python.png",
+        "name": "Python"
+      }
+    ]
+  },
+  {
+    "category": "Développement web",
+    "skills": [
+      {
+        "iconFilename": "html.png",
+        "name": "HTML"
+      },
+      {
+        "iconFilename": "css.svg",
+        "name": "CSS"
+      },
+      {
+        "iconFilename": "sass.svg",
+        "name": "SASS"
+      },
+      {
+        "iconFilename": "php.svg",
+        "name": "PHP"
+      },
+      {
+        "iconFilename": "javascript.svg",
+        "name": "JavaScript"
+      },
+      {
+        "iconFilename": "typescript_2.png",
+        "name": "TypeScript"
+      },
+      {
+        "iconFilename": "nodejs.svg",
+        "name": "Node.js"
+      },
+      {
+        "iconFilename": "vuejs.svg",
+        "name": "Vue.js"
+      },
+      {
+        "iconFilename": "vuejs.svg",
+        "name": "ReactJS"
+      }
+    ]
+  }
+]
