@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./LinkProject.module.scss";
 
-const Link = ({ url, children }) => {
+const LinkProject = ({ url, children }) => {
   return (
     <a className={styles.link} href={url}>
       {children}
@@ -9,4 +9,4 @@ const Link = ({ url, children }) => {
   );
 };
 
-export default Link;
+export default LinkProject;

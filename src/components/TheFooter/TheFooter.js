@@ -3,9 +3,9 @@ import "./TheFooter.scss";
 
 import { Link } from "react-router-dom";
 
-import github from "../../img/footer/github.svg";
-import linkedin from "../../img/footer/linkedin.svg";
-import mail from "../../img/footer/mail.svg";
+import github from "img/footer/github.svg";
+import linkedin from "img/footer/linkedin.svg";
+import mail from "img/footer/mail.svg";
 
 const TheFooter = () => (
   <footer>

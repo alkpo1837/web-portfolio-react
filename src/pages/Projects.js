@@ -9,11 +9,10 @@ import projectFiles from "../data/projects.json";
 const Projects = () => {
   return (
     <Layout>
-      {projectFiles &&
-        projectFiles.map((projectFile, index) => {
-          const data = require(`../data/projects/${projectFile}`);
-          return <Project key={index} data={data} />;
-        })}
+      {projectFiles.map((projectFile, index) => {
+        const data = require(`../data/projects/${projectFile}`);
+        return <Project key={index} data={data} />;
+      })}
     </Layout>
   );
 };

@@ -1,15 +1,14 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "./Experience.scss";
 
 const ReactMarkdown = require("react-markdown/with-html");
 
-const Experience = (({ data }) => {
-  const { name, icon, date, url, location, descriptionMd} = data;
-
+const Experience = ({ data }) => {
+  const { name, icon, date, url, location, descriptionMd } = data;
   const [md, setMd] = useState();
 
   useEffect(() => {
-    const markdown = require(`../../data/experiences/${descriptionMd}`);
+    const markdown = require(`data/experiences/${descriptionMd}`);
 
     fetch(markdown)
       .then(res => res.text())
@@ -21,7 +20,7 @@ const Experience = (({ data }) => {
       <div class="header_infos">
         <span class="entreprise_name">
           <a href={url}>
-            <img src={`../../img/about/experiences/${icon}`} alt={icon} />
+            <img src={`img/about/experiences/${icon}`} alt={icon} />
             <span>{name}</span>
           </a>
         </span>
@@ -33,9 +32,7 @@ const Experience = (({ data }) => {
         <ReactMarkdown source={md} />
       </div>
     </div>
-
   );
-});
-
+};
 
 export default Experience;

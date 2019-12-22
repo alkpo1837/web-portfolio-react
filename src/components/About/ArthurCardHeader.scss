@@ -1,0 +1,27 @@
+.card-header {
+  width: 100%;
+  height: 48px;
+
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+
+  display: flex;
+  justify-content: center;
+  margin-bottom: 96px;
+  padding: 24px 0px;
+
+  background: rgb(128, 128, 128);
+  background: linear-gradient(
+    180deg,
+    rgba(128, 128, 128, 1) 0%,
+    rgba(0, 0, 0, 0.26) 100%
+  );
+
+  .image {
+    height: 164px;
+    width: 164px;
+    border-radius: 50%;
+
+    border: 1px solid black;
+  }
+}

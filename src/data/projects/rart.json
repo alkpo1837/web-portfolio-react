@@ -14,9 +14,5 @@
       "url": "https://play.google.com/store/apps/details?id=com.alkpo.RArt"
     }
   ],
-  "images": [
-    "https://source.unsplash.com/240x480",
-    "https://source.unsplash.com/240x480",
-    "https://source.unsplash.com/240x480"
-  ]
+  "images": ["rart_1.png", "rart_2.png", "rart_3.png"]
 }

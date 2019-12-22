@@ -12,19 +12,18 @@ const SkillCard = ({ data }) => {
         </button>
       </div>
       <div class="all_lines">
-        {skills &&
-          skills.map((skill, index) => {
-            const { iconFilename, name } = skill;
-            return (
-              <div key={index} class="skill">
-                <img
-                  src={`../../img/about/skills/${iconFilename}`}
-                  alt={`Skill ${name}`}
-                />
-                <span>{name}</span>
-              </div>
-            );
-          })}
+        {skills.map((skill, index) => {
+          const { iconFilename, name } = skill;
+          return (
+            <div key={index} class="skill">
+              <img
+                src={`img/about/skills/${iconFilename}`}
+                alt={`Skill ${name}`}
+              />
+              <span>{name}</span>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

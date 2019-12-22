@@ -10,7 +10,7 @@ const ProjectType = ({ type }) => {
   const projectType = projectTypeIcon.find(
     projectType => projectType.type === type
   );
-  const icon = require(`../../img/projects/${projectType.icon}`);
+  const icon = require(`img/projects/${projectType.icon}`);
   return (
     <div className="type">
       <img src={icon} alt="Project type" />
