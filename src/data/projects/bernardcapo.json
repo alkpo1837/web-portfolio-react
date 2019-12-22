@@ -1,0 +1,14 @@
+{
+  "name": "bernardcapo.com",
+  "date": "Septembre 2019 - Décembre 2019",
+  "descriptionMd": "bernardcapo.md",
+  "type": "personnal",
+  "languages": ["Vue.js"],
+  "links": [
+    {
+      "name": "Site",
+      "url": "https://www.bernardcapo.com"
+    }
+  ],
+  "images": ["bernardcapo/1.jpg", "bernardcapo/2.jpg", "bernardcapo/3.jpg"]
+}

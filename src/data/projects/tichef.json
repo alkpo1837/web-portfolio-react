@@ -1,0 +1,9 @@
+{
+  "name": "TiChef",
+  "date": "Janvier 2016 - Avril 2016",
+  "descriptionMd": "tichef.md",
+  "type": "school",
+  "languages": ["iOS natif (Swift)"],
+  "links": [],
+  "images": ["tichef/1.jpg", "tichef/2.jpg", "tichef/3.jpg"]
+}

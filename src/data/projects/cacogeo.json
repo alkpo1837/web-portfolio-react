@@ -1,0 +1,9 @@
+{
+  "name": "Cacogeo",
+  "date": "Janvier 2017 - Avril 2017",
+  "descriptionMd": "cacogeo.md",
+  "type": "school",
+  "languages": ["Android natif (Java)", "Unity", "Vuforia", "PHP", "MySQL"],
+  "links": [],
+  "images": ["cacogeo/1.jpg", "cacogeo/2.jpg", "cacogeo/3.jpg"]
+}

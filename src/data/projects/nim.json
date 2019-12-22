@@ -1,0 +1,9 @@
+{
+  "name": "Jeux de Nim",
+  "date": "Septembre 2016 - Avril 2017",
+  "descriptionMd": "nim.md",
+  "type": "school",
+  "languages": ["Unity"],
+  "links": [],
+  "images": ["nim/1.jpg", "nim/2.jpg", "nim/3.jpg"]
+}
