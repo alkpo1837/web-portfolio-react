@@ -68,5 +68,59 @@
         "name": "ReactJS"
       }
     ]
+  },
+  {
+    "category": "Logiciels & OS",
+    "skills": [
+      {
+        "iconFilename": "as.svg",
+        "name": "Android Studio"
+      },
+      {
+        "iconFilename": "vscode.svg",
+        "name": "Visual Studio Code"
+      },
+      {
+        "iconFilename": "vs.svg",
+        "name": "VIsual Studio"
+      },
+      {
+        "iconFilename": "trello.svg",
+        "name": "Trello"
+      },
+      {
+        "iconFilename": "asana.svg",
+        "name": "Asana"
+      },
+      {
+        "iconFilename": "windows.png",
+        "name": "Windows"
+      },
+      {
+        "iconFilename": "ubuntu.png",
+        "name": "Ubuntu"
+      }
+    ]
+  },
+  {
+    "category": "Qualités personnelles",
+    "skills": [
+      {
+        "iconFilename": "project.svg",
+        "name": "Gestion de projet"
+      },
+      {
+        "iconFilename": "client.svg",
+        "name": "Relation client"
+      },
+      {
+        "iconFilename": "leader.svg",
+        "name": "Tutorat de stagiaire"
+      },
+      {
+        "iconFilename": "teacher.svg",
+        "name": "Enseignement et mentoring"
+      }
+    ]
   }
 ]
