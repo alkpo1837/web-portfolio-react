@@ -50,11 +50,10 @@ const Project = ({ data }) => {
       </div>
       <div className={styles.screenshots}>
         {images.map((image, index) => {
-          console.log(`img/projects/${image}`);
           return (
             <img
               key={index}
-              src={`img/projects/${image}`}
+              src={require(`img/projects/${image}`)}
               alt={"Screen" + index}
             />
           );

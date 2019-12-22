@@ -1,7 +1,7 @@
 import React from "react";
 import "./ArthurCardHeader.scss";
 
-import arthur_photo from "img/about/arthur.png";
+import arthur_photo from "img/about/arthur.jpg";
 
 const ArthurCardHeader = () => {
   return (

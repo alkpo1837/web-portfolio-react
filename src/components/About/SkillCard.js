@@ -17,7 +17,7 @@ const SkillCard = ({ data }) => {
           return (
             <div key={index} class="skill">
               <img
-                src={`img/about/skills/${iconFilename}`}
+                src={require(`img/about/skills/${iconFilename}`)}
                 alt={`Skill ${name}`}
               />
               <span>{name}</span>

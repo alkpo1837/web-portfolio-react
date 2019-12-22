@@ -5,16 +5,15 @@ const ArthurCardContent = () => {
   return (
     <div className="card-content">
       <p>
-        Je suis développeur multiplateformes. Après avoir obtenu mon diplome
-        d'ingénieur à Polytech Tours, j'ai travaillé pendant 2 ans à XIWEN
-        studio en tant que développeur Unity & web.
+        Je suis développeur de sites web, d'applications mobiles et de jeux
+        vidéo. Après mon diplôme en 2017, j'ai travaillé pendant 2 ans dans une
+        société de création de serious games. J'ai pu participer à l'élaboration
+        de projets mêlant ludification et apprentissage, avec notamment des
+        technologies émergentes comme la réalité virtuelle ou augmentée.
         <br />
-        Je décide ensuite de me lancer en tant qu'auto entrepreneur, pour la
-        création de site web, applications mobiles et jeux vidéo. J'aime
-        également développer des projets personnels, comme RArt ou Dorébus.
-        <br />
-        Sociable, curieux et passoinné, j'ai l'expérience de projets courts et
-        longs, et je n'ai aucun mal à discuter avec un client.
+        J'apprécie utiliser mes compétences pour mettre en avant du contenu
+        artistique, scientifique ou éducatif, que ce soit dans mon travail ou
+        dans des projets personnels.
       </p>
     </div>
   );

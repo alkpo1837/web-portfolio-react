@@ -20,7 +20,7 @@ const Experience = ({ data }) => {
       <div class="header_infos">
         <span class="entreprise_name">
           <a href={url}>
-            <img src={`img/about/experiences/${icon}`} alt={icon} />
+            <img src={require(`img/about/experiences/${icon}`)} alt={icon} />
             <span>{name}</span>
           </a>
         </span>
