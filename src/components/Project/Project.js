@@ -5,15 +5,29 @@ import ProjectType from "components/Project/ProjectType";
 import Technology from "components/Project/Technology";
 import LinkProject from "components/Project/LinkProject";
 
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/scss/image-gallery.scss";
 
 const ReactMarkdown = require("react-markdown/with-html");
 
 const Project = ({ data }) => {
-  const { name, date, descriptionMd, type, languages, links, images } = data;
+  let { name, date, descriptionMd, type, languages, links, images } = data;
 
   const [md, setMd] = useState();
+
+  const allImages = [
+    {
+      original: "https://lorempixel.com/620/975/"
+    },
+    {
+      original: "https://lorempixel.com/605/811/"
+    },
+    {
+      original: "https://lorempixel.com/608/1200/"
+    }
+  ];
+
+  // {(images = images.map(image => `original : 'img/projects/${image}`'))}
 
   useEffect(() => {
     const markdown = require(`data/projects/${descriptionMd}`);
@@ -21,7 +35,7 @@ const Project = ({ data }) => {
     fetch(markdown)
       .then(res => res.text())
       .then(text => setMd(text));
-  }, [descriptionMd]);
+  }, [descriptionMd, images]);
 
   return (
     <div className={styles.project}>
@@ -54,18 +68,14 @@ const Project = ({ data }) => {
         </div>
       </div>
       <div className={styles.screenshots}>
-        {/* <Carousel autoplay showThumbs={false} infiniteLoop={true}> */}
-        <img src={require(`img/projects/rart/1.png`)} alt={"Screen 0"} />
-        {/* {images.map((image, index) => {
-          return (
-            <img
-              key={index}
-              src={require(`img/projects/${image}`)}
-              alt={"Screen" + index}
-            />
-          );
-        })} */}
-        {/* </Carousel> */}
+        <ImageGallery
+          showBullets={true}
+          showPlayButton={false}
+          showThumbnails={false}
+          useBrowserFullscreen={false}
+          showFullscreenButton={false}
+          items={allImages}
+        />
       </div>
     </div>
   );
