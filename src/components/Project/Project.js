@@ -15,19 +15,22 @@ const Project = ({ data }) => {
 
   const [md, setMd] = useState();
 
-  const allImages = [
-    {
-      original: "https://lorempixel.com/620/975/"
-    },
-    {
-      original: "https://lorempixel.com/605/811/"
-    },
-    {
-      original: "https://lorempixel.com/608/1200/"
-    }
-  ];
+  // const allImages = [
+  //   {
+  //     original: require("img/projects/rart/1.png")
+  //   },
+  //   {
+  //     original: require("img/projects/rart/2.png")
+  //   },
+  //   {
+  //     original: require("img/projects/rart/3.png")
+  //   }
+  // ];
 
-  // {(images = images.map(image => `original : 'img/projects/${image}`'))}
+  const realImages = images.map(image => ({
+    original: require(`img/projects/${image}`)
+  }));
+  console.log(realImages);
 
   useEffect(() => {
     const markdown = require(`data/projects/${descriptionMd}`);
@@ -74,7 +77,7 @@ const Project = ({ data }) => {
           showThumbnails={false}
           useBrowserFullscreen={false}
           showFullscreenButton={false}
-          items={allImages}
+          items={realImages}
         />
       </div>
     </div>
