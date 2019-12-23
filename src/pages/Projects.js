@@ -1,18 +1,22 @@
 import React from "react";
 // import "./Projects.scss";
 
-import Layout from "../components/Layout";
-import Project from "../components/Project/Project";
+import Layout from "components/Layout";
+import AccordionItemProject from "components/Project/AccordionItemProject";
 
-import projectFiles from "../data/projects.json";
+import { Accordion } from "react-accessible-accordion";
+
+import projectFiles from "data/projects.json";
 
 const Projects = () => {
   return (
     <Layout>
-      {projectFiles.map((projectFile, index) => {
-        const data = require(`../data/projects/${projectFile}`);
-        return <Project key={index} data={data} />;
-      })}
+      <Accordion allowZeroExpanded={true}>
+        {projectFiles.map((projectFile, index) => {
+          const { type, files } = projectFile;
+          return <AccordionItemProject type={type} projects={files} />;
+        })}
+      </Accordion>
     </Layout>
   );
 };

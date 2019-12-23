@@ -1,10 +1,14 @@
 [
-  "rart.json",
-  "dorebus.json",
-  "bernardcapo.json",
-  "londonmap.json",
-  "cacogeo.json",
-  "rvd.json",
-  "tichef.json",
-  "nim.json"
+  {
+    "type": "Site web",
+    "files": ["dorebus.json", "bernardcapo.json"]
+  },
+  {
+    "type": "Application mobile",
+    "files": ["rart.json", "londonmap.json", "cacogeo.json", "tichef.json"]
+  },
+  {
+    "type": "Jeux vidéo",
+    "files": ["nim.json"]
+  }
 ]
