@@ -5,6 +5,9 @@ import ProjectType from "components/Project/ProjectType";
 import Technology from "components/Project/Technology";
 import LinkProject from "components/Project/LinkProject";
 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+
 const ReactMarkdown = require("react-markdown/with-html");
 
 const Project = ({ data }) => {
@@ -49,15 +52,17 @@ const Project = ({ data }) => {
         })}
       </div>
       <div className={styles.screenshots}>
-        {images.map((image, index) => {
-          return (
-            <img
-              key={index}
-              src={require(`img/projects/${image}`)}
-              alt={"Screen" + index}
-            />
-          );
-        })}
+        <Carousel autoplay showThumbs={false} infiniteLoop={true}>
+          {images.map((image, index) => {
+            return (
+              <img
+                key={index}
+                src={require(`img/projects/${image}`)}
+                alt={"Screen" + index}
+              />
+            );
+          })}
+        </Carousel>
       </div>
     </div>
   );

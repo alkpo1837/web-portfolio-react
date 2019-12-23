@@ -5,5 +5,5 @@
   "descriptionMd": "dorebus.md",
   "languages": ["Python", "Flask", "ReactJS", "Android natif"],
   "links": [],
-  "images": []
+  "images": ["dorebus/1.jpg", "dorebus/2.jpg"]
 }

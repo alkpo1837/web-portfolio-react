@@ -68,30 +68,13 @@
   }
 
   .screenshots {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     margin-top: 24px;
-
-    @media screen and (max-width: $break-size-desktop) {
-      flex-wrap: wrap;
-    }
+    height: 450px;
+    width: auto;
 
     img {
-      width: 240px;
-
-      @media screen and (max-width: $break-size-desktop) {
-        width: 160px;
-        margin-top: 8px;
-      }
-    }
-    .fit {
-      // height: 480px;
-      width: auto;
-      max-width: 320px;
-    }
-    .bordered {
-      border: 1px solid black;
+      height: 450px;
+      width: auto !important;
     }
   }
 }
