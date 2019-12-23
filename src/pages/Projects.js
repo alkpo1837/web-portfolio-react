@@ -14,7 +14,9 @@ const Projects = () => {
       <Accordion allowZeroExpanded={true}>
         {projectFiles.map((projectFile, index) => {
           const { type, files } = projectFile;
-          return <AccordionItemProject type={type} projects={files} />;
+          return (
+            <AccordionItemProject key={index} type={type} projects={files} />
+          );
         })}
       </Accordion>
     </Layout>

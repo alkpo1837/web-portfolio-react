@@ -25,44 +25,47 @@ const Project = ({ data }) => {
 
   return (
     <div className={styles.project}>
-      <div className={styles.firstLine}>
-        <h1 className={styles.name}>{name}</h1>
-        <ProjectType type={type} />
-      </div>
-      <div className={styles.date}>
-        <img src="img/projects/calendar.svg" alt="Calendar" />
-        <span>{date}</span>
-      </div>
-      <div className={styles.description}>
-        <ReactMarkdown source={md} />
+      <div className={styles.informations}>
+        <div className={styles.firstLine}>
+          <h1 className={styles.name}>{name}</h1>
+          <ProjectType type={type} />
+        </div>
+        <div className={styles.date}>
+          <img src={require("img/projects/calendar.svg")} alt="Calendar" />
+          <span>{date}</span>
+        </div>
+        <div className={styles.description}>
+          <ReactMarkdown source={md} />
 
-        <div className={styles.technologies}>
-          {languages.map((language, index) => {
-            return <Technology key={index}>{language}</Technology>;
+          <div className={styles.technologies}>
+            {languages.map((language, index) => {
+              return <Technology key={index}>{language}</Technology>;
+            })}
+          </div>
+        </div>
+        <div className={styles.links}>
+          {links.map(({ name, url }, index) => {
+            return (
+              <LinkProject key={index} url={url}>
+                {name}
+              </LinkProject>
+            );
           })}
         </div>
       </div>
-      <div className={styles.links}>
-        {links.map(({ name, url }, index) => {
-          return (
-            <LinkProject key={index} url={url}>
-              {name}
-            </LinkProject>
-          );
-        })}
-      </div>
       <div className={styles.screenshots}>
-        <Carousel autoplay showThumbs={false} infiniteLoop={true}>
-          {images.map((image, index) => {
-            return (
-              <img
-                key={index}
-                src={require(`img/projects/${image}`)}
-                alt={"Screen" + index}
-              />
-            );
-          })}
-        </Carousel>
+        {/* <Carousel autoplay showThumbs={false} infiniteLoop={true}> */}
+        <img src={require(`img/projects/rart/1.png`)} alt={"Screen 0"} />
+        {/* {images.map((image, index) => {
+          return (
+            <img
+              key={index}
+              src={require(`img/projects/${image}`)}
+              alt={"Screen" + index}
+            />
+          );
+        })} */}
+        {/* </Carousel> */}
       </div>
     </div>
   );
