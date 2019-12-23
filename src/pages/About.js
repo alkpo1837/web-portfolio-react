@@ -12,7 +12,7 @@ const About = () => {
   return (
     <Layout>
       <ArthurCard />
-      <div class="all-skills">
+      <div className="all-skills">
         {skillsFile.map((skills, index) => {
           return <SkillCard key={index} data={skills} />;
         })}

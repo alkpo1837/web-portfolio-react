@@ -15,22 +15,9 @@ const Project = ({ data }) => {
 
   const [md, setMd] = useState();
 
-  // const allImages = [
-  //   {
-  //     original: require("img/projects/rart/1.png")
-  //   },
-  //   {
-  //     original: require("img/projects/rart/2.png")
-  //   },
-  //   {
-  //     original: require("img/projects/rart/3.png")
-  //   }
-  // ];
-
   const realImages = images.map(image => ({
     original: require(`img/projects/${image}`)
   }));
-  console.log(realImages);
 
   useEffect(() => {
     const markdown = require(`data/projects/${descriptionMd}`);

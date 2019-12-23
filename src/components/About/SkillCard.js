@@ -1,29 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import "./SkillCard.scss";
 
 const SkillCard = ({ data }) => {
   const { category, skills } = data;
+  let [isOpened, setIsOpened] = useState(false);
+
+  function clickOnBtn(e) {
+    setIsOpened(!isOpened);
+    console.log(isOpened);
+  }
+
   return (
-    <div class="skill_card header_box_top_left_full_height border-bottom">
-      <div class="header_title">
+    <div className="skill_card header_box_top_left_full_height border-bottom">
+      <div className="header_title">
         <span>{category}</span>
-        <button class="open_close_button" type="button">
-          -
+        <button
+          className="open_close_button"
+          onClick={clickOnBtn}
+          type="button"
+        >
+          {isOpened ? "-" : "+"}
         </button>
       </div>
-      <div class="all_lines">
-        {skills.map((skill, index) => {
-          const { iconFilename, name } = skill;
-          return (
-            <div key={index} class="skill">
-              <img
-                src={require(`img/about/skills/${iconFilename}`)}
-                alt={`Skill ${name}`}
-              />
-              <span>{name}</span>
-            </div>
-          );
-        })}
+      <div className="all_lines">
+        {isOpened &&
+          skills.map((skill, index) => {
+            const { iconFilename, name } = skill;
+            return (
+              <div key={index} className="skill">
+                <img
+                  src={require(`img/about/skills/${iconFilename}`)}
+                  alt={`Skill ${name}`}
+                />
+                <span>{name}</span>
+              </div>
+            );
+          })}
       </div>
     </div>
   );

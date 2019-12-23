@@ -16,19 +16,19 @@ const Experience = ({ data }) => {
   }, [descriptionMd]);
 
   return (
-    <div class="experience header_box_top_left">
-      <div class="header_infos">
-        <span class="entreprise_name">
+    <div className="experience header_box_top_left">
+      <div className="header_infos">
+        <span className="entreprise_name">
           <a href={url}>
             <img src={require(`img/about/experiences/${icon}`)} alt={icon} />
             <span>{name}</span>
           </a>
         </span>
-        <span class="entreprise_location">{location}</span>
+        <span className="entreprise_location">{location}</span>
       </div>
 
-      <span class="entreprise_duration">{date}</span>
-      <div class="missions">
+      <span className="entreprise_duration">{date}</span>
+      <div className="missions">
         <ReactMarkdown source={md} />
       </div>
     </div>
