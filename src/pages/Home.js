@@ -12,7 +12,10 @@ import game from "img/home/game.svg";
 const Home = () => (
   <Layout>
     <h2>
-      Je suis <strong>Arthur</strong>. Je développe :
+      <span style={{ color: "#4faaff" }}>
+        <strong>Arthur Capo</strong>
+      </span>
+      . Je développe :
     </h2>
     <div className="all-activies">
       <Product icon={web} type={"Des sites webs"} animationDelay={"0.5s"} />

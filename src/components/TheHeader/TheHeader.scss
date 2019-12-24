@@ -1,7 +1,7 @@
 @import "main";
 
 header {
-  background-color: black;
+  background-color: $black-color;
 
   .content_header {
     margin: 0 64px;
@@ -27,8 +27,8 @@ header {
 
     #my_name {
       a {
-        border-top: 1px solid white;
-        border-left: 1px solid white;
+        border-top: 1px solid $white-color;
+        border-left: 1px solid $white-color;
 
         padding: 16px;
         margin: 32px;
@@ -47,7 +47,7 @@ header {
         }
 
         &:hover {
-          color: gray;
+          color: $gray-color;
           border-top: 1px solid gray;
           border-left: 1px solid gray;
           transition: all 0.2s ease-in;
@@ -61,7 +61,7 @@ header {
       }
       a {
         padding-right: 32px;
-        color: white;
+        color: $white-color;
         text-decoration: none;
         font-weight: bold;
         text-align: center;
@@ -81,5 +81,5 @@ header {
 }
 
 .current_link {
-  border: 1px solid white !important;
+  border: 1px solid $white-color !important;
 }

@@ -7,7 +7,7 @@ const TheHeader = () => (
   <header>
     <div className="content_header">
       <div id="my_name">
-        <Link to="/">ARTHUR CAPO</Link>
+        <Link to="/">A C</Link>
       </div>
 
       <div id="menu">

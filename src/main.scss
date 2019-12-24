@@ -2,16 +2,20 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 
 /** Color palette **/
-$black-color: #252222;
-$white-color: rgb(250, 250, 250);
-// $white-color-2: rgb(235, 235, 235);
-$white-color-2: hsl(212, 33%, 89%);
+$black-color: hsl(230, 16%, 16%);
+$black-color-2: hsl(230, 26%, 26%);
+$black-color-3: hsl(230, 36%, 36%);
+$black-color-4: hsl(230, 46%, 46%);
+$black-color-5: hsl(230, 56%, 56%);
 
 $gray-color: #867e7e;
-$text-color: $black-color;
+$white-color: rgb(238, 235, 235);
 
-$indigo-1: hsl(224, 67%, 76%);
-$indigo-2: hsl(228, 45%, 45%);
+$blue-color-1: #4faaff;
+$blue-color-2: #84c1fa;
+
+$maroon-color-1: #ad6c00;
+$maroon-color-2: #facd84;
 
 $common-size: 1200px;
 
@@ -29,8 +33,8 @@ body {
 body {
   font-family: "Lato", sans-serif;
 
-  background-color: $white-color;
-  color: $text-color;
+  background-color: $black-color;
+  color: $white-color;
 
   font-size: 18px;
 
