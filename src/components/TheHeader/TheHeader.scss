@@ -2,9 +2,10 @@
 
 header {
   background-color: $black-color;
+  height: 64px;
 
   .content_header {
-    margin: 0 64px;
+    margin: 0 128px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

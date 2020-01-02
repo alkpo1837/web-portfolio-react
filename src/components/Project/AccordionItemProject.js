@@ -10,7 +10,6 @@ import {
 import Project from "components/Project/Project";
 import Slider from "react-slick";
 
-// Demo styles, see 'Styles' section below for some notes on use.
 import "react-accessible-accordion/dist/fancy-example.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

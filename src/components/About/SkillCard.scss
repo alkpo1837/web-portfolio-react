@@ -1,11 +1,32 @@
 @import "main";
 
-.skill_card {
+.skill-card {
   display: flex;
   flex-direction: column;
-  margin-bottom: 16px;
+  margin: 16px;
 
-  .all_lines {
+  .header-title {
+    color: $blue-color-1;
+    padding: 8px;
+    margin-top: 8px;
+    margin-left: 8px;
+    font-weight: bold;
+
+    .open-close-button {
+      background: transparent;
+      color: $blue-color-2;
+      border: 4px solid $blue-color-1;
+      padding: 4px 16px;
+      margin-left: 16px;
+      font-weight: bold;
+
+      &:hover {
+        background-color: $black-color-4;
+      }
+    }
+  }
+
+  .all-lines {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -34,37 +55,37 @@
   }
 }
 
-.header_box_top_left_full_height {
+.header-box-top-left-full-height {
   position: relative;
   &:before {
     content: "";
-    background: black;
+    background: $blue-color-2;
     position: absolute;
     top: 0;
     left: 0;
     width: 64px;
-    height: 1px;
+    height: 4px;
   }
 
   &:after {
     content: "";
-    background: black;
+    background: $blue-color-2;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
-    width: 1px;
+    width: 4px;
   }
 }
 
 .border-top {
-  border-top: 1px solid black;
+  border-top: 4px solid $blue-color-2;
 }
 
 .border-left {
-  border-left: 1px solid black;
+  border-left: 4px solid $blue-color-2;
 }
 
 .border-bottom {
-  border-bottom: 1px solid black;
+  border-bottom: 4px solid $blue-color-2;
 }

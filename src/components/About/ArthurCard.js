@@ -9,6 +9,9 @@ const ArthurCard = () => {
       <div className="card-header">
         <img className="image" src={arthur_photo} alt="Arthur" />
       </div>
+      <div class="card-line">
+        <div className="actual-line"></div>
+      </div>
       <div className="card-content">
         <p>
           Je suis développeur de sites web, d'applications mobiles et de jeux

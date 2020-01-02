@@ -11,22 +11,26 @@ import game from "img/home/game.svg";
 
 const Home = () => (
   <Layout>
-    <h2>
-      <span style={{ color: "#4faaff" }}>
-        <strong>Arthur Capo</strong>
-      </span>
-      . Je développe :
-    </h2>
-    <div className="all-activies">
-      <Product icon={web} type={"Des sites webs"} animationDelay={"0.5s"} />
-      <Product
-        icon={smartphone}
-        type={"Des applications mobiles"}
-        animationDelay={"0s"}
-      />
-      <Product icon={game} type={"Des jeux vidéo"} animationDelay={"1s"} />
+    <div class="home-layout">
+      <div class="text">
+        <h1 className="my-name">
+          Arthur <br /> Capo
+        </h1>
+      </div>
+      <div className="all-activies">
+        <h2 className="title">Créateur de :</h2>
+        <div class="activites-item">
+          <Product icon={web} type={"Sites web"} animationDelay={"0.5s"} />
+          <Product
+            icon={smartphone}
+            type={"Applications mobiles"}
+            animationDelay={"0s"}
+          />
+          <Product icon={game} type={"Jeux vidéo"} animationDelay={"1s"} />
+        </div>
+      </div>
     </div>
-    <Description animationDelay={"1.75s"} />
+    {/* <Description animationDelay={"1.75s"} /> */}
   </Layout>
 );
 

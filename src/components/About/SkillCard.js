@@ -11,18 +11,18 @@ const SkillCard = ({ data }) => {
   }
 
   return (
-    <div className="skill_card header_box_top_left_full_height border-bottom">
-      <div className="header_title">
+    <div className="skill-card header-box-top-left-full-height border-bottom">
+      <div className="header-title">
         <span>{category}</span>
         <button
-          className="open_close_button"
+          className="open-close-button"
           onClick={clickOnBtn}
           type="button"
         >
-          {isOpened ? "-" : "+"}
+          {isOpened ? "Fermer" : "Voir"}
         </button>
       </div>
-      <div className="all_lines">
+      <div className="all-lines">
         {isOpened &&
           skills.map((skill, index) => {
             const { iconFilename, name } = skill;

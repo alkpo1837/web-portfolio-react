@@ -1,14 +1,15 @@
 @import "main";
 
 footer {
-  margin-top: 80px;
+  // margin-top: 80px;
   width: 100%;
-
-  background-color: $black-color;
-  color: $white-color;
+  height: 64px;
+  // position: absolute;
+  // bottom: 0;
+  margin: 16px 0;
 
   .content_footer {
-    width: 880px;
+    width: 50%;
     margin: 8px auto;
 
     display: flex;

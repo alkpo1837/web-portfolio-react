@@ -1,23 +1,58 @@
 @import "../main";
 
-h2 {
-  font-weight: normal;
-}
-
-.all-activies {
+.home-layout {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
   width: 100%;
-  align-items: left;
-  justify-content: space-between;
-  margin: 0 32px;
+  justify-content: space-around;
 
-  @media screen and (max-width: $break-size-desktop) {
-    margin: 0 8px;
+  .text {
+    display: flex;
+    width: 40%;
     flex-direction: column;
+    text-align: center;
+
+    .my-name {
+      font-weight: bold;
+      font-size: 80px;
+      color: $blue-color-1;
+      margin: 0;
+    }
   }
 
-  @media screen and (max-width: $break-size-mobile) {
-    margin-left: 0px;
+  .all-activies {
+    width: 40%;
+
+    border-left: 4px solid $blue-color-1;
+    // border-radius: 8px;
+
+    padding: 48px;
+
+    .title {
+      margin-top: 32px;
+      font-size: 42px;
+    }
+
+    .activities-item {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: left;
+      justify-content: space-between;
+      margin: 48px 32px;
+      padding: 48px;
+      height: 100%;
+
+      @media screen and (max-width: $break-size-desktop) {
+        margin: 0 8px;
+        flex-direction: column;
+      }
+
+      @media screen and (max-width: $break-size-mobile) {
+        margin-left: 0px;
+      }
+    }
   }
 }
