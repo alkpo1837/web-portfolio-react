@@ -64,7 +64,7 @@
         "name": "Vue.js"
       },
       {
-        "iconFilename": "vuejs.svg",
+        "iconFilename": "react.svg",
         "name": "ReactJS"
       }
     ]
