@@ -14,11 +14,7 @@ const Projects = () => {
 
   return (
     <Layout>
-      <Tabs
-        style={{
-          boxShadow: "0.055rem 0.055rem 1.11rem rgba(240, 240, 240, 0.27)"
-        }}
-      >
+      <Tabs>
         <TabList>
           {projectFiles.map((projectFile, index) => {
             const { type } = projectFile;

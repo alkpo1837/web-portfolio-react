@@ -2,11 +2,15 @@
 
 .project {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 
   width: auto;
-  padding: 8px;
+  padding: 16px;
+  margin: 64px 32px;
+
+  border: 1px solid rgba(240, 240, 240, 0.75);
+  background-color: $black-color-half;
 
   @media screen and (max-width: $break-size-mobile) {
     padding: 16px;
@@ -27,9 +31,9 @@
         align-items: flex-start;
       }
 
-      h1 {
+      .name {
         font-weight: bold;
-        font-size: 20px;
+        font-size: 28px;
         margin-top: 0;
       }
     }
@@ -51,7 +55,8 @@
     }
 
     .description {
-      margin: 16px 0;
+      font-size: 20px;
+      padding: 16px;
 
       .technologies {
         display: flex;

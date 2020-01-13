@@ -3,7 +3,6 @@ import "./Home.scss";
 
 import Layout from "components/Layout";
 import Product from "components/Home/Product";
-import Description from "components/Home/Description";
 
 import web from "img/home/web.svg";
 import smartphone from "img/home/smartphone.svg";
@@ -14,11 +13,12 @@ const Home = () => (
     <div class="home-layout">
       <div class="text">
         <h1 className="my-name">
-          Arthur <br /> Capo
+          ARTHUR <br /> CAPO
         </h1>
       </div>
+      <div class="separation"></div>
       <div className="all-activies">
-        <h2 className="title">Créateur de :</h2>
+        <h2 className="title">Développeur freelance</h2>
         <div class="activites-item">
           <Product icon={web} type={"Sites web"} animationDelay={"0.5s"} />
           <Product
