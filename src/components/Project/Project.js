@@ -30,13 +30,17 @@ const Project = ({ data }) => {
   return (
     <div className={styles.project}>
       <div className={styles.informations}>
-        <div className={styles.firstLine}>
-          <h1 className={styles.name}>{name}</h1>
-          <ProjectType type={type} />
-        </div>
-        <div className={styles.date}>
-          <img src={require("img/projects/calendar.svg")} alt="Calendar" />
-          <span>{date}</span>
+        <div className={styles.header}>
+          <div>
+            <h1 className={styles.name}>{name}</h1>
+          </div>
+          <div className={styles.typeAndDate}>
+            <ProjectType type={type} />
+            <div className={styles.date}>
+              <img src={require("img/projects/calendar.svg")} alt="Calendar" />
+              <span>{date}</span>
+            </div>
+          </div>
         </div>
         <div className={styles.description}>
           <ReactMarkdown source={md} />

@@ -23,38 +23,41 @@
     flex: 2;
     padding: 8px;
 
-    .first-line {
+    .header {
       display: flex;
-      flex-direction: row;
       justify-content: space-between;
-      align-items: center;
-
-      @media screen and (max-width: $break-size-desktop / 2) {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+      align-items: top;
+      margin-top: 16px;
 
       .name {
         font-weight: bold;
-        font-size: 28px;
+        font-size: 36px;
         margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 16px;
       }
-    }
 
-    .date {
-      padding-top: 8px;
-      color: $gray-color;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      img {
-        width: 24px;
-        height: 24px;
+      .typeAndDate {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .date {
+          padding-top: 8px;
+          color: $gray-color;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          img {
+            width: 24px;
+            height: 24px;
+          }
+          span {
+            margin-left: 8px;
+          }
+          font-style: italic;
+        }
       }
-      span {
-        margin-left: 8px;
-      }
-      font-style: italic;
     }
 
     .description {

@@ -1,5 +1,4 @@
 import React from "react";
-// import "./Projects.scss";
 
 import Layout from "components/Layout";
 import AllProjects from "components/Project/AllProjects";
@@ -7,7 +6,7 @@ import AllProjects from "components/Project/AllProjects";
 import projectFiles from "data/projects.json";
 
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import "react-tabs/style/react-tabs.css";
+import "./ReactTabs.scss";
 
 const Projects = () => {
   const arrayTypes = [];

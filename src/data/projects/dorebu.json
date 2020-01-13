@@ -1,8 +1,8 @@
 {
-  "name": "Dorébus",
+  "name": "Dorébu",
   "date": "Juin 2019 - En cours",
   "type": "personnal",
-  "descriptionMd": "dorebus.md",
+  "descriptionMd": "dorebu.md",
   "languages": ["Python", "Flask", "ReactJS", "Android natif"],
   "links": [],
   "images": ["dorebus/1.jpg", "dorebus/2.jpg"]

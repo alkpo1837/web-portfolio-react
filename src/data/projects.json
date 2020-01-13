@@ -1,11 +1,11 @@
 [
   {
     "type": "Site web",
-    "files": ["dorebus.json", "bernardcapo.json"]
+    "files": ["dorebu.json", "bernardcapo.json"]
   },
   {
     "type": "Application mobile",
-    "files": ["rart.json", "londonmap.json", "cacogeo.json", "tichef.json"]
+    "files": ["rart.json", "londonmap.json", "cacogeo.json"]
   },
   {
     "type": "Jeux vidéo",

@@ -3,6 +3,9 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Amiri&display=swap");
 
+@import url("https://fonts.googleapis.com/css?family=Domine&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Heebo&display=swap");
+
 /** Color palette **/
 // $black-color: hsl(232, 16%, 28%);
 $black-color: hsl(234, 12%, 31%);
@@ -64,5 +67,6 @@ body {
 
   h1 {
     color: white;
+    font-family: "DOMINE", sans-serif;
   }
 }
