@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Project.module.scss";
+import "./ImageGallery.scss";
 
 import ProjectType from "components/Project/ProjectType";
 import Technology from "components/Project/Technology";
 import LinkProject from "components/Project/LinkProject";
 
 import ImageGallery from "react-image-gallery";
-import "react-image-gallery/styles/scss/image-gallery.scss";
 
 const ReactMarkdown = require("react-markdown/with-html");
 

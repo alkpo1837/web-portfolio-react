@@ -44,8 +44,13 @@ body {
   font-size: 18px;
 
   a {
-    font-style: underline;
-    color: $black-color;
+    // font-style: oblique;
+    text-decoration: none;
+    color: hsl(18, 34%, 68%);
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   @media screen and (max-width: $break-size-mobile) {
@@ -55,5 +60,9 @@ body {
       margin-left: 4px;
       padding-left: 4px;
     }
+  }
+
+  h1 {
+    color: white;
   }
 }

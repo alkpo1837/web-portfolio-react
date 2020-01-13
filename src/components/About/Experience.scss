@@ -1,7 +1,7 @@
 @import "main";
 
 .experience {
-  padding: 16px;
+  padding: 24px;
   margin: 32px 16px;
 
   // border-left: 4px solid $blue-color-1;
@@ -39,13 +39,14 @@
         text-decoration: none;
         font-weight: bold;
         color: $white-color;
+        font-size: 24px;
 
         img {
-          width: 24px;
+          width: 32px;
         }
 
         span {
-          margin-left: 12px;
+          margin-left: 16px;
         }
       }
     }
