@@ -1,0 +1,14 @@
+{
+  "name": "EVAsion",
+  "date": "Avril 2017 - Décembre 2017",
+  "descriptionMd": "evasion.md",
+  "type": "professionnal",
+  "languages": ["Unity"],
+  "links": [
+    {
+      "name": "Présentation du projet",
+      "url": "http://fluence.prod.lamp.cnrs.fr/evasion/"
+    }
+  ],
+  "images": ["evasion/1.jpg", "evasion/2.jpg", "evasion/3.jpg"]
+}

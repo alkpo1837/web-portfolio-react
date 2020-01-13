@@ -1,0 +1,14 @@
+{
+  "name": "Mars Science Explorer",
+  "date": "Janvier 2019 - Septembre 2019",
+  "descriptionMd": "mse.md",
+  "type": "professionnal",
+  "languages": ["Unity", "HTC Vive"],
+  "links": [
+    {
+      "name": "Vidéo de présentation",
+      "url": "https://www.youtube.com/watch?v=EBOQsQzy-80"
+    }
+  ],
+  "images": ["mse/1.jpg", "mse/2.jpg", "mse/3.jpg"]
+}

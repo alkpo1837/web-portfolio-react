@@ -3,7 +3,12 @@ import "./ProjectType.scss";
 
 const projectTypeIcon = [
   { type: "personnal", text: "Projet personnel", icon: "user.svg" },
-  { type: "school", text: "Projet scolaire", icon: "school.svg" }
+  { type: "school", text: "Projet scolaire", icon: "school.svg" },
+  {
+    type: "professionnal",
+    text: "Projet professionnel",
+    icon: "professionnal.svg"
+  }
 ];
 
 const ProjectType = ({ type }) => {
