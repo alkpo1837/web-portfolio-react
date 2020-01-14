@@ -4,7 +4,7 @@
   // -webkit-tap-highlight-color: transparent;
 
   &__tab-list {
-    border-bottom: 4px solid #a99d98;
+    border-bottom: 4px solid $border-color-4;
     margin: 48px 32px;
     width: 411px;
 
@@ -24,8 +24,8 @@
     font-size: 20px;
 
     &--selected {
-      background: #a99d98;
-      border-color: #aaa;
+      background: $border-color-4;
+      border-color: $border-color-4;
       color: black;
       border-radius: 5px 5px 0 0;
     }
