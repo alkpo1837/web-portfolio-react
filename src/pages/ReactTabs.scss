@@ -6,7 +6,7 @@
   &__tab-list {
     border-bottom: 4px solid #a99d98;
     margin: 48px 32px;
-    // border-radius: 16px;
+    width: 411px;
 
     padding: 0;
   }
@@ -20,6 +20,8 @@
     list-style: none;
     padding: 6px 12px;
     cursor: pointer;
+
+    font-size: 20px;
 
     &--selected {
       background: #a99d98;

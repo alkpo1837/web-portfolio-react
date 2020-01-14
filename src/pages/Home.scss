@@ -1,6 +1,5 @@
 @import "../main";
 
-
 .home-layout {
   display: flex;
   flex-direction: row;
@@ -20,7 +19,7 @@
 
       font-weight: bold;
       font-size: 80px;
-      color: $blue-color-1;
+      color: $border-color;
       margin: 0;
     }
   }
@@ -28,7 +27,9 @@
   .separation {
     height: 445px;
     width: 8px;
-    border-left: 8px solid $blue-color-1;
+$gray-color: #867e7e;
+$gray-color: #867e7e;
+    border-left: 8px solid $border-color;
   }
 
   .all-activies {

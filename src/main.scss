@@ -7,20 +7,16 @@
 @import url("https://fonts.googleapis.com/css?family=Heebo&display=swap");
 
 /** Color palette **/
-// $black-color: hsl(232, 16%, 28%);
-$black-color: hsl(234, 12%, 31%);
+// $black-color: hsl(234, 12%, 31%);
 
-$black-color-half: hsl(230, 20%, 20%);
-// $black-color-2: hsl(230, 26%, 26%);
-// $black-color-3: hsl(230, 36%, 36%);
-$black-color-4: hsl(230, 46%, 46%);
-// $black-color-5: hsl(230, 56%, 56%);
+// $black-color-half: hsl(230, 20%, 20%);
 
-$gray-color: #867e7e;
+// $black-color-4: hsl(230, 46%, 46%);
+
 $white-color: rgb(222, 247, 247);
 
-$blue-color-1: #dbdbdb;
-$blue-color-2: #dbdbdb;
+// $blue-color-1: #dbdbdb;
+// $blue-color-2: #dbdbdb;
 
 $maroon-color-1: #ad6c00;
 $maroon-color-2: #facd84;
@@ -29,6 +25,14 @@ $common-size: 1200px;
 
 $break-size-desktop: 936px;
 $break-size-mobile: 475px;
+
+$background-color: hsl(234, 12%, 31%);
+$border-color: hsl(18, 9%, 63%);
+$text-color: hsl(0, 0%, 86%);
+$box-background-color: hsl(235, 11%, 19%);
+$box-shadow-color: hsla(0, 0%, 94%, 0.149);
+
+$gray-color: hsl(0, 3%, 51%);
 
 html,
 body {
@@ -41,7 +45,7 @@ body {
 body {
   font-family: "Lato", sans-serif;
 
-  background-color: $black-color;
+  background-color: $background-color;
   color: $white-color;
 
   font-size: 18px;

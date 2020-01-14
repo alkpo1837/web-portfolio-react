@@ -9,11 +9,11 @@
   padding: 16px;
   margin: 64px 32px;
 
-  background-color: hsl(235, 11%, 19%);
+  background-color: $box-background-color;
 
-  border: 4px solid hsl(18, 9%, 63%);
+  border: 4px solid $border-color;
   border-radius: 12px;
-  box-shadow: 7px 5px 15px 2px hsla(18, 33%, 59%, 0.2);
+  box-shadow: 7px 5px 15px 2px $box-shadow-color;
 
   @media screen and (max-width: $break-size-mobile) {
     padding: 16px;
