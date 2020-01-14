@@ -56,13 +56,10 @@ header {
         &:hover {
           color: $gray-color;
 
-          // border-top: 1px solid gray;
-          // border-left: 1px solid gray;
-
-          border-top: 2px solid $border-color-2;
-          border-left: 2px solid $border-color-3;
-          border-right: 2px solid $border-color-4;
-          border-bottom: 2px solid $border-color-1;
+          border-top: 4px solid $border-color-2;
+          border-left: 4px solid $border-color-3;
+          border-right: 4px solid $border-color-4;
+          border-bottom: 4px solid $border-color-1;
 
           transition: all 0.2s ease-in;
         }

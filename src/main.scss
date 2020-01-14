@@ -7,24 +7,10 @@
 @import url("https://fonts.googleapis.com/css?family=Heebo&display=swap");
 
 /** Color palette **/
-// $black-color: hsl(234, 12%, 31%);
-
-// $black-color-half: hsl(230, 20%, 20%);
-
-// $black-color-4: hsl(230, 46%, 46%);
-
 $white-color: rgb(222, 247, 247);
 
-// $blue-color-1: #dbdbdb;
-// $blue-color-2: #dbdbdb;
-
-$maroon-color-1: #ad6c00;
-$maroon-color-2: #facd84;
-
-$common-size: 1200px;
-
-$break-size-desktop: 936px;
-$break-size-mobile: 475px;
+$maroon-color-1: hsl(37, 100%, 34%);
+$maroon-color-2: hsl(37, 50%, 79%);
 
 $background-color: hsl(108, 9%, 11%);
 
@@ -37,7 +23,12 @@ $text-color: hsl(0, 0%, 86%);
 $box-background-color: hsl(0, 0%, 0%);
 $box-shadow-color: hsla(0, 0%, 94%, 0.149);
 
-$gray-color: hsl(0, 3%, 51%);
+$gray-color: hsl(0, 5%, 59%);
+
+$common-size: 1200px;
+
+$break-size-desktop: 936px;
+$break-size-mobile: 475px;
 
 html,
 body {

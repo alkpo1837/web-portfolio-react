@@ -4,9 +4,6 @@
   padding: 24px;
   margin: 32px 16px;
 
-  // border-left: 4px solid $blue-color-1;
-  // border-bottom: 4px solid $blue-color-1;
-
   color: $text-color;
 
   background-color: $box-background-color;
@@ -14,8 +11,6 @@
   border: 4px solid $border-color-2;
   border-radius: 12px;
   box-shadow: 7px 5px 15px 2px $box-shadow-color;
-
-  // border-bottom-left-radius: 12px;
 
   .header-infos {
     display: flex;

@@ -9,6 +9,6 @@
   },
   {
     "type": "Jeux vidéo",
-    "files": ["nim.json", "evasion.json", "mse.json"]
+    "files": ["evasion.json", "mse.json", "nim.json"]
   }
 ]

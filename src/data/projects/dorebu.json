@@ -4,6 +4,11 @@
   "type": "personnal",
   "descriptionMd": "dorebu.md",
   "languages": ["Python", "Flask", "ReactJS", "Android natif"],
-  "links": [],
+  "links": [
+    {
+      "name": "Version web expérimentale",
+      "url": "https://dorebu-experimental.netlify.com/"
+    }
+  ],
   "images": ["dorebus/1.jpg", "dorebus/2.jpg"]
 }
