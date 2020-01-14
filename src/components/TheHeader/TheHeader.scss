@@ -28,8 +28,13 @@ header {
 
     #my_name {
       a {
-        border-top: 1px solid $white-color;
-        border-left: 1px solid $white-color;
+        border-top: 2px solid $border-color;
+        border-left: 2px solid $border-color-2;
+        border-right: 2px solid $border-color-3;
+        border-bottom: 2px solid $border-color-4;
+
+        border-radius: 8px;
+
         font-family: "DOMINE", sans-serif;
 
         padding: 16px;
@@ -50,8 +55,15 @@ header {
 
         &:hover {
           color: $gray-color;
-          border-top: 1px solid gray;
-          border-left: 1px solid gray;
+
+          // border-top: 1px solid gray;
+          // border-left: 1px solid gray;
+
+          border-top: 2px solid $border-color-2;
+          border-left: 2px solid $border-color-3;
+          border-right: 2px solid $border-color-4;
+          border-bottom: 2px solid $border-color;
+
           transition: all 0.2s ease-in;
         }
       }
