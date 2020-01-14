@@ -17,7 +17,7 @@
       width: 256px;
       border-radius: 50%;
 
-      border: 4px solid $border-color;
+      border: 4px solid $border-color-1;
 
       box-shadow: 1px 5px 15px 2px $box-shadow-color;
     }
@@ -30,7 +30,7 @@
     .actual-line {
       width: 256px;
       height: 8px;
-      border-top: 4px solid $border-color;
+      border-top: 4px solid $border-color-1;
       border-top-style: dotted;
     }
   }
@@ -42,7 +42,7 @@
 
     background-color: $box-background-color;
 
-    border: 4px solid $border-color;
+    border: 4px solid $border-color-1;
     border-radius: 12px;
     box-shadow: 7px 5px 15px 2px $box-shadow-color;
 

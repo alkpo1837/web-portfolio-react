@@ -25,9 +25,20 @@
   }
 
   .separation {
-    height: 445px;
     width: 8px;
-    border-left: 8px solid $text-color;
+    height: 445px;
+
+    border-left: 8px solid;
+    border-image: linear-gradient(
+        to bottom,
+        $border-color-1 25%,
+        $border-color-2 25%,
+        $border-color-2 50%,
+        $border-color-3 50%,
+        $border-color-3 75%,
+        $border-color-4 75%
+      )
+      5;
   }
 
   .all-activies {
