@@ -7,12 +7,31 @@ import Home from "pages/Home";
 import About from "pages/About";
 import Projects from "pages/Projects";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 
-function App() {
-  return (
-    <Router>
-      <div className="App">
+class App extends React.Component {
+  componentDidUpdate(prevProps) {
+    if (this.props.location.pathname !== prevProps.location.pathname) {
+      console.log("Route change!");
+
+      const links = Array.from(
+        document.getElementById("menu").getElementsByTagName("a")
+      );
+
+      links.forEach(link => {
+        if (window.location.href.includes(link.getAttribute("href"))) {
+          link.className += "current_link";
+        } else {
+          link.className = "";
+        }
+      });
+    }
+  }
+
+  render() {
+    return (
+      <div className="app">
         <TheHeader />
         <Switch>
           <Route exact path="/">
@@ -27,8 +46,8 @@ function App() {
         </Switch>
         <TheFooter />
       </div>
-    </Router>
-  );
+    );
+  }
 }
 
-export default App;
+export default withRouter(props => <App {...props} />);

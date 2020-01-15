@@ -10,16 +10,16 @@ import game from "img/home/game.svg";
 
 const Home = () => (
   <Layout>
-    <div class="home-layout">
-      <div class="text">
+    <div className="home-layout">
+      <div className="text">
         <h1 className="my-name">
           ARTHUR <br /> CAPO
         </h1>
       </div>
-      <div class="separation"></div>
+      <div className="separation"></div>
       <div className="all-activies">
         <h2 className="title">Développeur freelance</h2>
-        <div class="activites-item">
+        <div className="activites-item">
           <Product icon={web} type={"Sites web"} animationDelay={"0.5s"} />
           <Product
             icon={smartphone}

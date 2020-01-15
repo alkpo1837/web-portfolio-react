@@ -157,6 +157,8 @@ $ig-transparent: rgba(0, 0, 0, 0) !default;
   line-height: 0;
   top: 0;
 
+  max-width: 880px;
+
   &.fullscreen {
     background: $ig-black;
   }

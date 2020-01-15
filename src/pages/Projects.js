@@ -19,7 +19,7 @@ const Projects = () => {
             const { type } = projectFile;
             arrayTypes.push(type);
 
-            return <Tab>{type}</Tab>;
+            return <Tab key={index}>{type}</Tab>;
           })}
         </TabList>
         {projectFiles.map((projectFile, index) => {
