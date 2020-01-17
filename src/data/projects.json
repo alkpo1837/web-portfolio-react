@@ -1,10 +1,10 @@
 [
   {
-    "type": "Site web",
+    "type": "Sites web",
     "files": ["dorebu.json", "bernardcapo.json"]
   },
   {
-    "type": "Application mobile",
+    "type": "Applications mobiles",
     "files": ["rart.json", "londonmap.json", "cacogeo.json"]
   },
   {
