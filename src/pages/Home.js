@@ -12,9 +12,7 @@ const Home = () => (
   <Layout>
     <div className="home-layout">
       <div className="text">
-        <h1 className="my-name">
-          ARTHUR <br /> CAPO
-        </h1>
+        <h1 className="my-name">ARTHUR CAPO</h1>
       </div>
       <div className="separation"></div>
       <div className="all-activies">

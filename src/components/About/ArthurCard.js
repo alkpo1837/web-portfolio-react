@@ -15,7 +15,7 @@ const ArthurCard = () => {
       <div className="card-content">
         <p>
           Je suis développeur de sites web, d'applications mobiles et de jeux
-          vidéo
+          vidéo.
           <br /> <br />
           Après mon diplôme d'ingénieur en 2017, j'ai travaillé pendant 2 ans
           dans une société de création de serious games. J'ai pu participer à
