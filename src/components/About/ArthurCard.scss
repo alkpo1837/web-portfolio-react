@@ -34,19 +34,21 @@
 
     .actual-line {
       width: 256px;
-      height: 8px;
+      height: 1px;
       border-top: 4px solid $border-color-1;
-      border-top-style: dotted;
+      // border-top-style: solid;
 
       @media screen and (max-width: $break-size-desktop) {
         flex-direction: column;
         align-items: center;
 
-        width: 8px;
+        width: 1px;
         height: 128px;
 
         border-right: 4px solid $border-color-1;
-        border-right-style: dotted;
+        box-shadow: 4px 1px 15px 2px $border-color-1;
+
+        // border-right-style: dotted;
 
         border-top: none;
       }
