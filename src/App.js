@@ -13,7 +13,7 @@ import { withRouter } from "react-router-dom";
 class App extends React.Component {
   componentDidUpdate(prevProps) {
     if (this.props.location.pathname !== prevProps.location.pathname) {
-      console.log("Route change!");
+      window.scrollTo(0, 0);
 
       const links = Array.from(
         document.getElementById("menu").getElementsByTagName("a")
