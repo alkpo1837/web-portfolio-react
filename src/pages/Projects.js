@@ -16,19 +16,28 @@ const Projects = () => {
       <Tabs>
         <TabList>
           {projectFiles.map((projectFile, index) => {
-            const { type } = projectFile;
+            const { type, className } = projectFile;
             arrayTypes.push(type);
 
-            return <Tab key={index}>{type}</Tab>;
+            return (
+              <Tab theClass={className} key={index}>
+                {type}
+              </Tab>
+            );
           })}
         </TabList>
         {projectFiles.map((projectFile, index) => {
-          const { files, type } = projectFile;
+          const { files, className, type } = projectFile;
           arrayTypes.push(type);
 
           return (
             <TabPanel>
-              <AllProjects key={index} type={type} projects={files} />
+              <AllProjects
+                key={index}
+                type={type}
+                className={className}
+                projects={files}
+              />
             </TabPanel>
           );
         })}

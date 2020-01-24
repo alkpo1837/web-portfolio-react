@@ -4,12 +4,12 @@ import Project from "components/Project/Project";
 
 import "./AllProjects.scss";
 
-const AllProjects = ({ type, projects }) => {
+const AllProjects = ({ type, className, projects }) => {
   return (
     <div>
       {projects.map((project, index) => {
         const data = require(`data/projects/${project}`);
-        return <Project key={index} data={data} />;
+        return <Project key={index} className={className} data={data} />;
       })}
     </div>
   );

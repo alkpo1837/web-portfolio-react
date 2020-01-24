@@ -1,14 +1,28 @@
 [
   {
     "type": "Sites web",
-    "files": ["dorebu.json", "bernardcapo.json"]
+    "className": "website",
+    "files": [
+      "dorebu.json",
+      "bernardcapo.json"
+    ]
   },
   {
     "type": "Applications mobiles",
-    "files": ["rart.json", "londonmap.json", "cacogeo.json"]
+    "className": "mobileApp",
+    "files": [
+      "rart.json",
+      "londonmap.json",
+      "cacogeo.json"
+    ]
   },
   {
     "type": "Jeux vidéo",
-    "files": ["evasion.json", "mse.json", "nim.json"]
+    "className": "videoGame",
+    "files": [
+      "evasion.json",
+      "mse.json",
+      "nim.json"
+    ]
   }
 ]

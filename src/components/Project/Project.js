@@ -10,7 +10,13 @@ import ImageGallery from "react-image-gallery";
 
 const ReactMarkdown = require("react-markdown/with-html");
 
-const Project = ({ data }) => {
+const allStyles = {
+  website: styles.website,
+  mobileApp: styles.mobileApp,
+  videoGame: styles.videoGame
+};
+
+const Project = ({ className, data }) => {
   let { name, date, descriptionMd, type, languages, links, images } = data;
 
   const [md, setMd] = useState();
@@ -28,7 +34,7 @@ const Project = ({ data }) => {
   }, [descriptionMd, images]);
 
   return (
-    <div className={styles.project}>
+    <div className={`${styles.project} ${allStyles[className]}`}>
       <div className={styles.informations}>
         <div className={styles.header}>
           <div>
