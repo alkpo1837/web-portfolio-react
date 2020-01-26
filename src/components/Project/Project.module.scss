@@ -23,9 +23,24 @@
 
     .header {
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
       align-items: top;
       margin-top: 16px;
+
+      img {
+        width: 32px;
+        height: 32px;
+
+        @media screen and (max-width: $break-size-mobile) {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      @media screen and (max-width: 900px) {
+        flex-direction: column;
+      }
 
       .name {
         font-weight: bold;
@@ -33,6 +48,10 @@
         margin-top: 0;
         margin-bottom: 0;
         margin-left: 16px;
+
+        @media screen and (max-width: $break-size-mobile) {
+          font-size: 28px;
+        }
       }
 
       .typeAndDate {
@@ -40,26 +59,28 @@
         flex-direction: column;
         align-items: flex-end;
 
+        @media screen and (max-width: 900px) {
+          align-items: flex-start;
+          margin-left: 16px;
+          margin-top: 16px;
+        }
+
         .date {
+          font-style: italic;
           padding-top: 8px;
           color: $gray-color;
           display: flex;
           flex-direction: row;
           align-items: center;
-          img {
-            width: 24px;
-            height: 24px;
-          }
+
           span {
             margin-left: 8px;
           }
-          font-style: italic;
         }
       }
     }
 
     .description {
-      // font-size: 20px;
       padding: 16px;
 
       .technologies {

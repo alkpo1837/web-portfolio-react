@@ -5,6 +5,10 @@
   flex-direction: column;
   margin: 32px 16px;
 
+  @media screen and (max-width: $break-size-mobile) {
+    margin: 32px 0;
+  }
+
   background-color: $box-background-color;
   // background-color: hsl(20, 4%, 58%);
 

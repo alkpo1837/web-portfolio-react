@@ -4,6 +4,10 @@
   padding: 24px;
   margin: 32px 16px;
 
+  @media screen and (max-width: $break-size-mobile) {
+    margin: 32px 0;
+  }
+
   color: $text-color;
 
   background-color: $box-background-color;
