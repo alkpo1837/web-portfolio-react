@@ -20,6 +20,11 @@
     text-align: right;
     margin-right: 90px;
 
+    @media screen and (max-width: $break-size-desktop) {
+      text-align: center;
+      margin-right: 0;
+    }
+
     .my-name {
       font-family: "DOMINE", sans-serif;
 
@@ -27,6 +32,14 @@
       font-size: 80px;
       color: $text-color;
       margin: 0;
+
+      @media screen and (max-width: $break-size-desktop) {
+        font-size: 64px;
+      }
+
+      @media screen and (max-width: $break-size-mobile) {
+        font-size: 48px;
+      }
     }
 
     @media screen and (max-width: $break-size-desktop) {
@@ -63,6 +76,10 @@
         )
         5;
     }
+
+    @media screen and (max-width: $break-size-mobile) {
+      width: 90%;
+    }
   }
 
   .all-activies {
@@ -75,11 +92,22 @@
       flex-direction: column;
 
       width: 100%;
+
+      padding: 0;
     }
 
     .title {
       margin-top: 32px;
       font-size: 42px;
+
+      @media screen and (max-width: $break-size-desktop) {
+        font-size: 32px;
+        text-align: center;
+      }
+
+      @media screen and (max-width: $break-size-mobile) {
+        font-size: 26px;
+      }
     }
 
     .activities-item {

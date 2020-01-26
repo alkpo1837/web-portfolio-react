@@ -5,7 +5,7 @@ import Layout from "components/Layout";
 import Product from "components/Home/Product";
 
 import web from "img/home/web.svg";
-import smartphone from "img/home/smartphone_new.svg";
+import smartphone from "img/home/smartphone.svg";
 import game from "img/home/game.svg";
 
 const Home = () => (

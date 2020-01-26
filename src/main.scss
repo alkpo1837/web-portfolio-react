@@ -30,6 +30,8 @@ $common-size: 1200px;
 $break-size-desktop: 1100px;
 $break-size-mobile: 475px;
 
+$break-size-mid: 780px;
+
 html,
 body {
   margin: 0px;
@@ -55,6 +57,10 @@ body {
       text-decoration: underline;
     }
   }
+
+  // @media screen and (max-width: $break-size-mid) {
+  //   font-size: 16px;
+  // }
 
   @media screen and (max-width: $break-size-mobile) {
     font-size: 14px;

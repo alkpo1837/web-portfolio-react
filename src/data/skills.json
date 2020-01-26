@@ -56,16 +56,12 @@
         "name": "TypeScript"
       },
       {
-        "iconFilename": "nodejs.svg",
-        "name": "Node.js"
-      },
-      {
         "iconFilename": "vuejs.svg",
         "name": "Vue.js"
       },
       {
         "iconFilename": "react.svg",
-        "name": "ReactJS"
+        "name": "React"
       }
     ]
   },

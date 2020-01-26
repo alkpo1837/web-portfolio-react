@@ -17,12 +17,18 @@
   .card-header {
     display: flex;
     align-items: center;
+
     .image {
       height: 284px;
       width: 284px;
       border-radius: 50%;
 
       border: 4px solid $border-color-4;
+
+      @media screen and (max-width: $break-size-mobile) {
+        width: 220px;
+        height: 220px;
+      }
     }
   }
 
@@ -64,7 +70,7 @@
     border-radius: 12px;
 
     padding: 8px;
-    font-size: 20px;
+    // font-size: 20px;
 
     p {
       margin-top: 0;

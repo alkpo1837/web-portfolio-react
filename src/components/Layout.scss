@@ -10,8 +10,6 @@ main {
 
   @media screen and (max-width: $break-size-desktop) {
     width: 90%;
-  }
-  @media screen and (max-width: 1100px) {
-    margin: 96px auto;
+    margin: 64px auto;
   }
 }

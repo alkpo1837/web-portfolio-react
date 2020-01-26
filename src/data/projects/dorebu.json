@@ -3,7 +3,7 @@
   "date": "Juin 2019 - En cours",
   "type": "personnal",
   "descriptionMd": "dorebu.md",
-  "languages": ["Python", "Flask", "ReactJS", "Android natif"],
+  "languages": ["Python", "Flask", "React", "Android natif"],
   "links": [
     {
       "name": "Version web expérimentale",

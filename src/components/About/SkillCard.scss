@@ -36,6 +36,12 @@
       height: 48px;
       max-width: 256px;
       margin-left: 32px;
+      padding-right: 32px;
+      width: 210px;
+
+      @media screen and (max-width: $break-size-mobile) {
+        margin-left: 8px;
+      }
 
       @media screen and (max-width: $break-size-mobile) {
         width: 220px;

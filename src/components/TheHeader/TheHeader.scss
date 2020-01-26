@@ -4,6 +4,10 @@ header {
   background-color: $background-color;
   height: 64px;
 
+  @media screen and (max-width: $break-size-desktop) {
+    height: auto;
+  }
+
   .content_header {
     margin: 0 128px;
     display: flex;
