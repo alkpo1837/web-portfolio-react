@@ -6,12 +6,13 @@ import { Link } from "react-router-dom";
 import github from "img/footer/github.svg";
 import linkedin from "img/footer/linkedin.svg";
 import mail from "img/footer/mail.svg";
+import cv from "img/footer/cv.svg";
 
 const TheFooter = () => (
   <footer>
     <div className="content_footer">
       <div id="websited_created">
-        <p>Créé par Arthur Capo</p>
+        <span>Créé par Arthur Capo</span>
       </div>
       <div id="sitemap">
         <Link to="/">Accueil</Link>
@@ -27,6 +28,9 @@ const TheFooter = () => (
         </a>
         <a href="mailto:capo.arthur@gmail.com">
           <img src={mail} alt="Mail logo" />
+        </a>
+        <a href="/CV.pdf">
+          <img src={cv} alt="CV logo" />
         </a>
       </div>
     </div>

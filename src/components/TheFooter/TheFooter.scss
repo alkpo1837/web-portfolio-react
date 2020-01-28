@@ -1,12 +1,14 @@
 @import "main";
 
 footer {
-  // margin-top: 80px;
   width: 100%;
   height: 64px;
-  // position: absolute;
-  // bottom: 0;
   margin: 16px 0;
+
+  @media screen and (max-width: $break-size-desktop) {
+    height: auto;
+    margin-top: 128px;
+  }
 
   .content_footer {
     width: 90%;
@@ -16,9 +18,19 @@ footer {
     justify-content: space-around;
 
     @media screen and (max-width: $break-size-desktop) {
-      width: 100%;
+      width: 75%;
       flex-direction: column;
+      // align-items: center;
+    }
+
+    #websited_created {
+      display: flex;
       align-items: center;
+
+      @media screen and (max-width: $break-size-desktop) {
+        display: block;
+        margin: 0 auto;
+      }
     }
 
     #sitemap {
@@ -29,10 +41,19 @@ footer {
         margin-bottom: 16px;
       }
 
+      @media screen and (max-width: $break-size-desktop) {
+        margin-top: 16px;
+        justify-content: space-evenly;
+      }
+
       a {
         color: $white-color;
         margin-left: 16px;
         font-weight: bold;
+
+        @media screen and (max-width: $break-size-desktop) {
+          margin-left: 0;
+        }
       }
     }
 
@@ -41,11 +62,14 @@ footer {
 
       display: flex;
       flex-direction: row;
-      align-items: center;
       justify-content: space-around;
 
       @media screen and (max-width: $break-size-desktop) {
         padding-bottom: 8px;
+      }
+      @media screen and (max-width: $break-size-desktop) {
+        width: auto;
+        justify-content: space-evenly;
       }
 
       img {
