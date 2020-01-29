@@ -14,7 +14,8 @@
   border-radius: 12px;
 
   @media screen and (max-width: $break-size-mobile) {
-    padding: 16px;
+    padding: 8px;
+    margin: 32px 0px;
   }
 
   .informations {

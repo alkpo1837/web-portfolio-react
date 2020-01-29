@@ -72,7 +72,7 @@ header {
 
     #menu {
       @media screen and (max-width: $break-size-mobile) {
-        flex-direction: column;
+        // flex-direction: column;
       }
       a {
         padding-right: 32px;
