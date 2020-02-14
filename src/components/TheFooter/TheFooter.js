@@ -12,7 +12,7 @@ const TheFooter = () => (
   <footer>
     <div className="content_footer">
       <div id="websited_created">
-        <span>Créé par Arthur Capo</span>
+        <span>Créé par Arthur Capo, avec React</span>
       </div>
       <div id="sitemap">
         <Link to="/">Accueil</Link>
