@@ -3,6 +3,7 @@
     "type": "Sites web",
     "className": "website",
     "files": [
+      "gifinder.json",
       "dorebu.json",
       "bernardcapo.json"
     ]

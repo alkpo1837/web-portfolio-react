@@ -1,0 +1,14 @@
+{
+  "name": "GIFinder",
+  "date": "Janvier 2020 - En cours",
+  "type": "personnal",
+  "descriptionMd": "gifinder.md",
+  "languages": ["Python", "Node.js", "PostgreSQL", "React"],
+  "links": [
+    {
+      "name": "Site web",
+      "url": "https://gifinder.xyz"
+    }
+  ],
+  "images": ["gifinder/1.jpg", "gifinder/2.jpg"]
+}
