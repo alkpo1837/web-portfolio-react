@@ -3,4 +3,4 @@ Conception, développement et publication d'un site web permettant de chercher u
 - Mise en place d'une API sur serveur distant (Node.js)
 - Site web en React, élaboration d'un design rétro/kitsch
 
-Ce projet est une collaboration avec [Romain Cascino](github.com/romaincscn/).
+Ce projet est une collaboration avec [Romain Cascino](https://romaincascino.com/).
