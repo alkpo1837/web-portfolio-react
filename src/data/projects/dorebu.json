@@ -1,14 +1,21 @@
 {
-  "name": "Dorébu",
+  "name": "dorébu",
   "date": "Juin 2019 - En cours",
   "type": "personnal",
   "descriptionMd": "dorebu.md",
-  "languages": ["Python", "Flask", "React", "Android natif"],
+  "languages": [
+    "Python",
+    "Flask",
+    "React"
+  ],
   "links": [
     {
       "name": "Version web expérimentale",
       "url": "https://dorebu-experimental.netlify.com/"
     }
   ],
-  "images": ["dorebus/1.jpg", "dorebus/2.jpg"]
+  "images": [
+    "dorebu/1.jpg",
+    "dorebu/2.jpg"
+  ]
 }

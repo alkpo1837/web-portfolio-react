@@ -1,26 +1,26 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import Layout from "components/Layout";
-import AllProjects from "components/Project/AllProjects";
+import Layout from 'components/Layout';
+import AllProjects from 'components/Project/AllProjects';
 
-import projectFiles from "data/projects.json";
+import projectFiles from 'data/projects.json';
 
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import "./ReactTabs.scss";
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import './ReactTabs.scss';
 
 const Projects = () => {
   const arrayTypes = [];
-  const [tabListClass, setTabListClass] = useState("websiteTabList");
+  const [tabListClass, setTabListClass] = useState('websiteTabList');
 
   function myMethod(index) {
-    if (index === 0) setTabListClass("websiteTabList");
-    else if (index === 1) setTabListClass("mobileAppTabList");
-    else if (index === 2) setTabListClass("videoGameTabList");
+    if (index === 0) setTabListClass('websiteTabList');
+    else if (index === 1) setTabListClass('mobileAppTabList');
+    else if (index === 2) setTabListClass('videoGameTabList');
   }
 
   return (
     <Layout>
-      <Tabs onSelect={index => myMethod(index)}>
+      <Tabs onSelect={(index) => myMethod(index)}>
         <TabList className={tabListClass}>
           {projectFiles.map((projectFile, index) => {
             const { type, className } = projectFile;
@@ -28,7 +28,7 @@ const Projects = () => {
 
             return (
               <Tab selectedClassName={className} key={index}>
-                <span color="red">{type}</span>
+                <span color='red'>{type}</span>
               </Tab>
             );
           })}
@@ -39,12 +39,7 @@ const Projects = () => {
 
           return (
             <TabPanel key={index}>
-              <AllProjects
-                key={index}
-                type={type}
-                className={className}
-                projects={files}
-              />
+              <AllProjects key={index} type={type} className={className} projects={files} />
             </TabPanel>
           );
         })}
