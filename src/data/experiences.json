@@ -1,6 +1,10 @@
 [
   {
     "type": "pro",
+    "filename": "freelance.json"
+  },
+  {
+    "type": "pro",
     "filename": "xiwen.json"
   },
   {

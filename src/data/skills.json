@@ -19,10 +19,6 @@
         "name": "Java"
       },
       {
-        "iconFilename": "kotlin.png",
-        "name": "Kotlin"
-      },
-      {
         "iconFilename": "python.png",
         "name": "Python"
       }

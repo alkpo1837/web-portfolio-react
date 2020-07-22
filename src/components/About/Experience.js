@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import "./Experience.scss";
+import React, { useState, useEffect } from 'react';
+import './Experience.scss';
 
-const ReactMarkdown = require("react-markdown/with-html");
+const ReactMarkdown = require('react-markdown/with-html');
 
 const Experience = ({ data }) => {
   const { name, icon, date, url, location, descriptionMd } = data;
@@ -11,24 +11,24 @@ const Experience = ({ data }) => {
     const markdown = require(`data/experiences/${descriptionMd}`);
 
     fetch(markdown)
-      .then(res => res.text())
-      .then(text => setMd(text));
+      .then((res) => res.text())
+      .then((text) => setMd(text));
   }, [descriptionMd]);
 
   return (
-    <div className="experience">
-      <div className="header-infos">
-        <span className="entreprise-name">
+    <div className='experience'>
+      <div className='header-infos'>
+        <span className='entreprise-name'>
           <a href={url}>
-            <img src={require(`img/about/experiences/${icon}`)} alt={icon} />
+            {icon !== '' && <img src={require(`img/about/experiences/${icon}`)} alt={icon} />}
             <span>{name}</span>
           </a>
         </span>
-        <span className="entreprise-location">{location}</span>
+        <span className='entreprise-location'>{location}</span>
       </div>
 
-      <span className="entreprise-duration">{date}</span>
-      <div className="missions">
+      <span className='entreprise-duration'>{date}</span>
+      <div className='missions'>
         <ReactMarkdown source={md} />
       </div>
     </div>
