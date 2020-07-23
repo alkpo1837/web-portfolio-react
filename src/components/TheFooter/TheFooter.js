@@ -26,7 +26,7 @@ const TheFooter = () => (
         <a href='https://www.linkedin.com/in/arthur-capo-1472a6108/'>
           <img src={linkedin} alt='LinkedIn logo' />
         </a>
-        <a href='mailto:arthurcapo@protonmail.com'>
+        <a href='mailto:arthur-capo@protonmail.com'>
           <img src={mail} alt='Mail logo' />
         </a>
         <a href='/CV.pdf'>
