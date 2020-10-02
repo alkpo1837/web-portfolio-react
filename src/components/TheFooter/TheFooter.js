@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 import github from 'img/footer/github.svg';
 import linkedin from 'img/footer/linkedin.svg';
+import instagram from 'img/footer/instagram.svg';
 import mail from 'img/footer/mail.svg';
 import cv from 'img/footer/cv.svg';
 
@@ -25,6 +26,9 @@ const TheFooter = () => (
         </a>
         <a href='https://www.linkedin.com/in/arthur-capo-1472a6108/'>
           <img src={linkedin} alt='LinkedIn logo' />
+        </a>
+        <a href='https://www.instagram.com/compart_ur/'>
+          <img src={instagram} alt='Instagram logo' />
         </a>
         <a href='mailto:arthur-capo@protonmail.com'>
           <img src={mail} alt='Mail logo' />

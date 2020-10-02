@@ -1,5 +1,5 @@
 {
-  "name": "dorébu",
+  "name": "Dorébu",
   "date": "Juin 2019 - En cours",
   "type": "personnal",
   "descriptionMd": "dorebu.md",
@@ -10,8 +10,8 @@
   ],
   "links": [
     {
-      "name": "Version web expérimentale",
-      "url": "https://dorebu-experimental.netlify.com/"
+      "name": "Site web",
+      "url": "https://dorebu.fr"
     }
   ],
   "images": [
