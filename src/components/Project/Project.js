@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Project.module.scss";
 import "./ImageGallery.scss";
+import classnames from "classnames";
 
 import ProjectType from "components/Project/ProjectType";
 import Technology from "components/Project/Technology";
@@ -13,7 +14,7 @@ const ReactMarkdown = require("react-markdown/with-html");
 const allStyles = {
   website: styles.website,
   mobileApp: styles.mobileApp,
-  videoGame: styles.videoGame
+  videoGame: styles.videoGame,
 };
 
 const Project = ({ className, data }) => {
@@ -21,20 +22,20 @@ const Project = ({ className, data }) => {
 
   const [md, setMd] = useState();
 
-  const realImages = images.map(image => ({
-    original: require(`img/projects/${image}`)
+  const realImages = images.map((image) => ({
+    original: require(`img/projects/${image}`),
   }));
 
   useEffect(() => {
     const markdown = require(`data/projects/${descriptionMd}`);
 
     fetch(markdown)
-      .then(res => res.text())
-      .then(text => setMd(text));
+      .then((res) => res.text())
+      .then((text) => setMd(text));
   }, [descriptionMd, images]);
 
   return (
-    <div className={`${styles.project} ${allStyles[className]}`}>
+    <div className={classnames(styles.project, allStyles[className])}>
       <div className={styles.informations}>
         <div className={styles.header}>
           <div>
