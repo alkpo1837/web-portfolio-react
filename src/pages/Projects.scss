@@ -1,0 +1,50 @@
+@import "main";
+
+.tab {
+  margin: 48px 32px;
+  display: flex;
+  flex-direction: row;
+
+  @media screen and (max-width: $break-size-mobile) {
+    margin: 32px 0px;
+    text-align: center;
+  }
+
+  padding: 0;
+
+  border-bottom: 4px solid $border-color-1;
+  background: $border-color-1;
+}
+
+.websiteTabList {
+  border-bottom: 4px solid $border-color-1;
+  background: $border-color-1;
+}
+
+.mobileAppTabList {
+  border-bottom: 4px solid $border-color-2;
+}
+
+.videoGameTabList {
+  border-bottom: 4px solid $border-color-3;
+}
+
+.website {
+  border-color: $border-color-1;
+  color: black;
+  border-radius: 5px 5px 0 0;
+}
+
+.mobileApp {
+  background: $border-color-2;
+  border-color: $border-color-2;
+  color: black;
+  border-radius: 5px 5px 0 0;
+}
+
+.videoGame {
+  background: $border-color-3;
+  border-color: $border-color-3;
+  color: black;
+  border-radius: 5px 5px 0 0;
+}
