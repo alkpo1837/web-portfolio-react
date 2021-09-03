@@ -102,6 +102,20 @@
   padding: 0;
 }
 
+.otherTabList {
+  border-bottom: 4px solid $border-color-4;
+  margin: 48px 32px;
+  display: flex;
+  flex-direction: row;
+
+  @media screen and (max-width: $break-size-mobile) {
+    margin: 32px 0px;
+    text-align: center;
+  }
+
+  padding: 0;
+}
+
 .website {
   background: $border-color-1;
   border-color: $border-color-1;
@@ -119,6 +133,13 @@
 .videoGame {
   background: $border-color-3;
   border-color: $border-color-3;
+  color: black;
+  border-radius: 5px 5px 0 0;
+}
+
+.other {
+  background: $border-color-4;
+  border-color: $border-color-4;
   color: black;
   border-radius: 5px 5px 0 0;
 }

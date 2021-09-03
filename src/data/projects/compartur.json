@@ -1,0 +1,19 @@
+{
+  "name": "CompArt_Ur",
+  "date": "Septembre 2020 - En cours",
+  "type": "personnal",
+  "descriptionMd": "compartur.md",
+  "languages": ["Unity", "p5.js"],
+  "links": [
+    {
+      "name": "Compte Instagram",
+      "url": "https://instagram.com/compart_ur"
+    }
+  ],
+  "images": [
+    "compartur/1.png",
+    "compartur/2.png",
+    "compartur/3.png",
+    "compartur/4.png"
+  ]
+}

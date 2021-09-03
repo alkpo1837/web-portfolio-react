@@ -2,28 +2,21 @@
   {
     "type": "Sites web",
     "className": "website",
-    "files": [
-      "gifinder.json",
-      "dorebu.json",
-      "bernardcapo.json"
-    ]
+    "files": ["gifinder.json", "dorebu.json", "bernardcapo.json"]
   },
   {
     "type": "Applications mobiles",
     "className": "mobileApp",
-    "files": [
-      "rart.json",
-      "londonmap.json",
-      "cacogeo.json"
-    ]
+    "files": ["rart.json", "londonmap.json", "cacogeo.json"]
   },
   {
     "type": "Jeux vidéo",
     "className": "videoGame",
-    "files": [
-      "evasion.json",
-      "mse.json",
-      "nim.json"
-    ]
+    "files": ["evasion.json", "mse.json", "nim.json"]
+  },
+  {
+    "type": "Autre",
+    "className": "other",
+    "files": ["compartur.json"]
   }
 ]

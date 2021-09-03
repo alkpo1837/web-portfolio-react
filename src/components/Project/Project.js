@@ -15,6 +15,7 @@ const allStyles = {
   website: styles.website,
   mobileApp: styles.mobileApp,
   videoGame: styles.videoGame,
+  other: styles.other,
 };
 
 const Project = ({ className, data }) => {
