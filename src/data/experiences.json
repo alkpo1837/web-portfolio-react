@@ -1,7 +1,15 @@
 [
   {
     "type": "pro",
-    "filename": "freelance.json"
+    "filename": "manzalab.json"
+  },
+  {
+    "type": "pro",
+    "filename": "superprof.json"
+  },
+  {
+    "type": "pro",
+    "filename": "syko.json"
   },
   {
     "type": "pro",
