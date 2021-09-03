@@ -1,6 +1,7 @@
 {
   "name": "SYKO studio",
-  "icon": "",
+  "icon": "syko_logo.png",
+  "icon_width": "82px",
   "date": "Janvier 2020 - Juin 2020",
   "url": "https://sykostudio.com/",
   "location": "Télétravail",
