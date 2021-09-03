@@ -52,12 +52,16 @@
         "name": "TypeScript"
       },
       {
-        "iconFilename": "vuejs.svg",
-        "name": "Vue.js"
-      },
-      {
         "iconFilename": "react.svg",
         "name": "React"
+      },
+      {
+        "iconFilename": "p5js.svg",
+        "name": "p5.js"
+      },
+      {
+        "iconFilename": "vuejs.svg",
+        "name": "Vue.js"
       }
     ]
   },
