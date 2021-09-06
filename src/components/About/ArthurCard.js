@@ -30,7 +30,7 @@ const ArthurCard = () => {
           d'améliorer ma capacité à m'intégrer rapidement à une nouvelle équipe,
           à m'adapter efficacement à un projet existant, et à consolider mes
           compétences en développement mobile/jeux vidéos avec Unity et de sites
-          webs avec React
+          web avec React.
           <br /> <br />
           J'apprécie utiliser mes compétences pour mettre en avant du contenu
           artistique, scientifique ou éducatif, que ce soit dans mon travail ou
