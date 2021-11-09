@@ -1,6 +1,10 @@
 [
   {
     "type": "pro",
+    "filename": "practicio.json"
+  },
+  {
+    "type": "pro",
     "filename": "manzalab.json"
   },
   {
